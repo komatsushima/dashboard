@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>著作権印税ダッシュボード | MCJP / NexTone</title>
+<title>著作権印税ダッシュボード | MCJP</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 <style>
@@ -410,9 +410,9 @@ tr:hover td { background: rgba(124,106,247,0.05); }
   <div class="header-icon">🎵</div>
   <div>
     <h1>著作権印税ダッシュボード</h1>
-    <p>MCJP（NexTone経由）からの印税支払明細書を自動解析・わかりやすく表示</p>
+    <p>MCJPからの印税支払明細書を自動解析・わかりやすく表示</p>
   </div>
-  <div class="header-badge">MCJP / NexTone</div>
+  <div class="header-badge">MCJP</div>
 </div>
 
 <div class="main">
@@ -426,7 +426,7 @@ tr:hover td { background: rgba(124,106,247,0.05); }
       📂 ファイルを選択
     </button>
     <input type="file" id="fileInput" accept=".pdf" style="display:none">
-    <div class="drop-hint">対応形式: PDF（NexTone発行の著作権使用料支払明細書）</div>
+    <div class="drop-hint">対応形式: PDF（MCJP発行の著作権使用料支払明細書）</div>
   </div>
 
   <!-- LOADING -->
@@ -498,7 +498,7 @@ tr:hover td { background: rgba(124,106,247,0.05); }
         <div class="card" style="padding:14px; border-color:rgba(124,106,247,0.4);">
           <div class="card-label">消費税額（加算分）</div>
           <div class="card-value" id="tax-amount-val" style="font-size:22px; color:var(--accent);">—</div>
-          <div class="card-sub">※NexToneは非適格事業者でも消費税を加算して支払い</div>
+          <div class="card-sub">※MCJPは非適格事業者でも消費税を加算して支払い</div>
         </div>
       </div>
     </div>
@@ -619,11 +619,11 @@ tr:hover td { background: rgba(124,106,247,0.05); }
       </div>
       <div class="glossary-item">
         <div class="glossary-term">💸 今期発生額（使用料の合計）</div>
-        <div class="glossary-def">今期に各プラットフォームから支払われた使用料の合計です。まだNexToneの手数料が引かれる前の金額です。</div>
+        <div class="glossary-def">今期に各プラットフォームから支払われた使用料の合計です。まだMCJPの手数料が引かれる前の金額です。</div>
       </div>
       <div class="glossary-item">
-        <div class="glossary-term">🏢 管理手数料（NexToneの取り分）</div>
-        <div class="glossary-def">NexTone（著作権管理会社）が著作権管理サービスの対価として取る手数料です。インタラクティブ配信（ストリーミング）は9.5%、カラオケは9.0%、BGMは20.0%などサービスによって異なります。</div>
+        <div class="glossary-term">🏢 管理手数料（MCJPの取り分）</div>
+        <div class="glossary-def">MCJP（著作権管理会社）が著作権管理サービスの対価として取る手数料です。インタラクティブ配信（ストリーミング）は9.5%、カラオケは9.0%、BGMは20.0%などサービスによって異なります。</div>
       </div>
       <div class="glossary-item">
         <div class="glossary-term">🔄 次期繰越額</div>
@@ -647,7 +647,7 @@ tr:hover td { background: rgba(124,106,247,0.05); }
       </div>
       <div class="glossary-item">
         <div class="glossary-term">🧾 消費税（加算分）</div>
-        <div class="glossary-def">NexToneは適格請求書発行事業者ではありませんが、消費税を加算して支払ってくれます。10%課税対象の使用料には消費税が上乗せされます。</div>
+        <div class="glossary-def">MCJPは適格請求書発行事業者ではありませんが、消費税を加算して支払ってくれます。10%課税対象の使用料には消費税が上乗せされます。</div>
       </div>
       <div class="glossary-item">
         <div class="glossary-term">🌍 消費税0% vs 10%の違い</div>
@@ -659,7 +659,7 @@ tr:hover td { background: rgba(124,106,247,0.05); }
       </div>
       <div class="glossary-item">
         <div class="glossary-term">📅 〇年〇期分とは</div>
-        <div class="glossary-def">NexToneは年4回（1期〜4期）に分けて使用料を分配します。1期＝1〜3月、2期＝4〜6月、3期＝7〜9月、4期＝10〜12月の利用分がまとめて支払われます。</div>
+        <div class="glossary-def">MCJPは年4回（1期〜4期）に分けて使用料を分配します。1期＝1〜3月、2期＝4〜6月、3期＝7〜9月、4期＝10〜12月の利用分がまとめて支払われます。</div>
       </div>
       <div class="glossary-item">
         <div class="glossary-term">🎵 TikTok（ByteDance 株式会社）とは</div>
@@ -667,7 +667,7 @@ tr:hover td { background: rgba(124,106,247,0.05); }
       </div>
       <div class="glossary-item">
         <div class="glossary-term">📊 徴収金額 vs 支払額の違い</div>
-        <div class="glossary-def">「徴収金額」はNexToneがプラットフォームから受け取った金額です。そこから管理手数料が引かれた後、さらに「分配率」（あなたの取り分の割合）をかけた金額が「支払額」として届きます。</div>
+        <div class="glossary-def">「徴収金額」はMCJPがプラットフォームから受け取った金額です。そこから管理手数料が引かれた後、さらに「分配率」（あなたの取り分の割合）をかけた金額が「支払額」として届きます。</div>
       </div>
     </div>
   </div>
@@ -677,7 +677,10 @@ tr:hover td { background: rgba(124,106,247,0.05); }
     <strong>📌 Google Sitesへの埋め込み手順：</strong><br>
     ① このHTMLファイルを <a href="https://pages.github.com/" target="_blank">GitHub Pages</a> か <a href="https://app.netlify.com/drop" target="_blank">Netlify Drop</a> にアップロードしてHTTPS URLを取得<br>
     ② Google Sitesで [挿入] → [埋め込む] → URLを貼り付け → [挿入]<br>
-    ③ サイズを調整して公開。PDFは毎回ブラウザ内で解析されるため、サーバー不要です。
+    ③ サイズを調整して公開。PDFは毎回ブラウザ内で解析されるため、サーバー不要です。<br><br>
+    <strong>🔗 このツールを再利用・複製したい方へ：</strong><br>
+    ソースコードは <a href="https://github.com/komatsushima/dashboard" target="_blank">github.com/komatsushima/dashboard</a> で公開しています。自由にご利用ください。<br>
+    <span style="font-size: 12px;">作者：松島 功（arne）</span>
   </div>
 
 </div><!-- /main -->
